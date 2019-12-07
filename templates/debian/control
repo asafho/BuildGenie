@@ -1,0 +1,9 @@
+Package: <service_name>
+Version: <version>
+Priority: optional
+Architecture: amd64
+Maintainer: Genie (support@Genie.com)
+Description: <service_name> service
+ git branch: <git_branch>
+ git commit: <git_sha>
+Section: base

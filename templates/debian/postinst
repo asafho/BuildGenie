@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+/bin/chmod a+x /etc/init.d/<service_name>
+/usr/sbin/update-rc.d <service_name> defaults

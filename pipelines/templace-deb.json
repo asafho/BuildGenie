@@ -1,0 +1,23 @@
+{
+	"package": "service-name",
+	"artifacts": [
+		{
+			"dst": "/path/to/install/files/1/",
+			"files": [
+				"source/path/of/files/*.zip",
+				"source/path2/of/specificfile/tetmplate.txt"			]
+		},
+		{
+			"dst": "destination/path/to/install/files/2/",
+			"files": [
+				"source/path/of/files/*.jar"
+			]
+		},
+			"dst": "destination/path/to/install/files/3/",
+			"files": [
+				"source/path/of/folder/"
+			]
+
+	],
+	"set_init_service": "yes"
+}

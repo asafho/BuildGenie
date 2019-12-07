@@ -1,0 +1,29 @@
+{
+  "name": "git-flow",
+  "workspace": "workspace",
+  "prepare": {
+    "git": [
+      {
+        "repo": "reponame",
+        "user": "repouser",
+        "branch": "develop",
+        "newBranch": "release/<version>",
+        "pushNewBranch": true
+      },
+      {
+        "repo": "reponame2",
+        "user": "repouser",
+        "branch": "develop",
+        "newBranch": "release/<version>",
+        "pushNewBranch": true
+      },
+      {
+        "repo": "reponame3",
+        "user": "repouser",
+        "branch": "develop",
+        "newBranch": "release/<version>",
+        "pushNewBranch": true
+      }
+    ]
+  }
+}

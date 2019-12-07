@@ -1,0 +1,8 @@
+{
+	"name": "company_name_component",
+	"workspace": "workspace",
+	"pipelines": [
+		"component/file1.json",
+		"component/file2.json"
+	]
+}

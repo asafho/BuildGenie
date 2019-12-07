@@ -1,0 +1,30 @@
+{
+	"name": "backend",
+	"prepare": {
+		"git": [{
+			"git_url": "bitbucket.org",
+			"repo": "reponame1",
+			"user": "repouser",
+			"branch": "repobranch"
+		},
+{
+			"git_url": "bitbucket.org",
+			"repo": "reponame2",
+			"user": "repouser",
+			"branch": "repobranch"
+		}]
+	},
+	"build": [{
+		"run_dir": "reponame1",
+		"gradle": "build"
+	},
+	{
+		"run_dir": "reponame2",
+		"npm": "run"
+	}],
+	"test": [{
+		"run_dir": "reponame1",
+		"sh": "./script.sh"
+		}
+	]
+}

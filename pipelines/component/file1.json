@@ -1,0 +1,32 @@
+{
+	"name": "reponame1",
+	"prepare": {
+		"git": [{
+			"git_url": "github.com",
+			"repo": "reponame1",
+			"user": "repouser",
+			"branch": "repobranch"
+		}]
+	},
+	"build": [{
+		"run_dir": "reponame1",
+		"gradle": "build"
+	},
+	{
+		"run_dir": "reponame1",
+		"npm": "run"
+	}],
+	"test": [{
+		"run_dir": "reponame1",
+		"gradle": "test"
+		}
+	],
+	"package": [{
+		"deb": "examples/templace-deb.json",
+		"docker":[{
+			"run_dir": "reponame1",
+			"docker": "build --build-arg ARG1=$ARG1 . -t docker.jfrog.io/reponame1:<version>"
+		}]
+		
+	}]
+}

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+case "" in
+    # Debian ####################################################
+    install|upgrade)
+    if [ -f /etc/init.d/<service_name> ]; then
+        /etc/init.d/<service_name> status
+        if [ 0 -ne 0 ]; then
+            service <service_name> stop
+        fi
+    fi
+    ;;
+    abort-deconfigure|abort-upgrade|abort-remove)
+    ;;
+esac

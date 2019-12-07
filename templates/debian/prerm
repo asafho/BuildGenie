@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+echo "*** Executing prerm ***"
+if [ -x /etc/init.d/<service_name> ]; then
+        service <service_name> stop
+fi
+echo "*** Done ***"
