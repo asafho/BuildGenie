@@ -58,7 +58,7 @@ class ArgParser(ArgumentParser):
                           default=False,
                           help='prepare workspace')
 
-        self.add_argument('--post','-p',
+        self.add_argument('--post',
                           action='store_true',
                           dest='post',
                           default=False,
