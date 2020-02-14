@@ -25,7 +25,7 @@ class ArgParser(ArgumentParser):
                           default='',
                           help='build pipe json')
 
-        self.add_argument('--pipeline-branches','-fb',
+        self.add_argument('--pipeline-branches','-pb',
                           action='store',
                           type=str,
                           dest='pipe_branches',
